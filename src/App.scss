@@ -1,0 +1,92 @@
+// variables
+// $material-color-blue-600: #1e88e5 !default;
+// $material-color-purple-600: #8e24aa !default;
+$material-color-pink-400: #ec407a !default;
+$material-color-pink-050: #fce4ec !default;
+// $material-color-orange-500: #ff9800 !default;
+@import "./functions";
+
+//crane theme
+$mdc-theme-primary: #5d1049;
+$mdc-theme-surface: #4e0d3a;
+$mdc-theme-secondary: #e30425;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$mdc-theme-on-surface: #fff;
+$mdc-typography-font-family: "Raleway";
+
+// all variables
+// $mdc-theme-primary	:blue;
+// $mdc-theme-primary-bg	:blue;
+// $mdc-theme-on-primary	:blue;
+// $mdc-theme-secondary	:blue;
+// $mdc-theme-secondary-bg	:blue;
+// $mdc-theme-on-secondary	:blue;
+// $mdc-theme-surface	:blue;
+// $mdc-theme-on-surface	:blue;
+// $mdc-theme-background	:blue;
+$mdc-typography-base: (
+	font-family: $mdc-typography-font-family,
+	-moz-osx-font-smoothing: grayscale,
+	-webkit-font-smoothing: antialiased
+);
+
+$mdc-typography-font-weight-values: (
+	thin: 100,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	semiBold: 600,
+	bold: 700,
+	black: 900
+) !default;
+
+$mdc-typography-styles-subtitle1: (
+	font-size: 16px,
+	font-weight: map-get($mdc-typography-font-weight-values, medium)
+);
+
+$mdc-typography-styles-caption: (
+	font-size: 12px,
+	font-weight: map-get($mdc-typography-font-weight-values, semiBold)
+);
+
+@import "~@material/typography/mdc-typography";
+@import "~@material/react-button/index.scss";
+@import "~@material/react-list/index.scss";
+@import "~@material/react-material-icon/index.scss";
+@import "~@material/react-layout-grid/index.scss";
+
+.mdc-button {
+	//@include mdc-icon-button-size(50px)
+}
+
+.mdc-list {
+	// @include mdc-list-item-primary-text-ink-color($material-color-blue-600);
+	// @include mdc-list-item-secondary-text-ink-color($material-color-purple-600);
+	@include mdc-list-item-graphic-fill-color(#5d1049);
+	@include mdc-list-item-graphic-ink-color($mdc-theme-on-primary);
+	// @include mdc-list-item-meta-ink-color($material-color-orange-500);
+}
+
+/*
+.mdc-list-item {
+	display: flex;
+	flex-flow: row;
+}
+
+.mdc-list-item__graphic {
+	align-self: flex-end;
+}
+*/
+
+// span, i {
+// 	-webkit-user-select: none;
+// 	-moz-user-select: none; /* Firefox all */
+// 	-ms-user-select: none; /* IE 10+ */
+// 	user-select: none; /* Likely future */
+// }
+
+// .drop-button:focus {
+//     outline: 0;
+// }

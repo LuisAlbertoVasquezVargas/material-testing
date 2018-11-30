@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/react-button": "^0.7.0",
+    "@material/react-layout-grid": "^0.7.0",
+    "@material/react-list": "^0.7.0",
+    "@material/react-material-icon": "^0.7.0",
+    "@material/theme": "^0.41.0",
+    "@material/typography": "^0.41.0",
+    "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
